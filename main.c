@@ -2,8 +2,13 @@
 
 int main()
 {
+    int s,t;
+    printf("enter time to deposit: \n");
+    scanf("%i",&t);
+    printf("enter sum to deposit: \n");
+    scanf("%i",&s);
     printf("hello world! \n");
-    system("pause");
+    
     return 0;
 }
 
