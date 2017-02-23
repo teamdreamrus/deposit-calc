@@ -13,7 +13,8 @@ int main()
     printf("enter correct data! \n");
     else
 	{
-        printf("so good \n");
+		printf("sum at the end of: ");
+        printf("%i",proffit(s,t));
     }
     return 0;
 }
