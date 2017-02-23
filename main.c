@@ -6,20 +6,20 @@ int Proffit(int s,int t);
 int main()
 {
 	int s,t;
-	printf("Введите сумму вклада (>1000):\n");
-	scanf("Сумма: %f \n",s);	
-	printf("ВВедите срок вклада (0-365):\n ");
-	scanf("Срок: %f \n",t);
-	if  (s>=1000) && (t<=365) {
+	printf("Write sum contribution (>1000):\n");
+	scanf("%f \n",s);	
+	printf("Write time contribution days (0-365):\n ");
+	scanf("%f \n",t);
+	if  ((s>=1000) && (t<=365)) {
 		Proffit(s,t);
 		
 		}
-	else printf("ВВедите корректные данные! \n");
+	else printf("Write true data \n");
 	return 0;
 	
 }
 int Proffit(int s,int t){
-	int prof; //доход
+	int prof; 
 	switch(t)
 	{
 		case 0..30: prof=s*0.9;
