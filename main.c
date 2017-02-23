@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int Proffit(int s,int t);
+int Proffit(int x,int z);
 
 int main()
 {
@@ -10,19 +10,21 @@ int main()
 	scanf("%f \n",s);	
 	printf("Write time contribution days (1-365):\n ");
 	scanf("%f \n",t);
-	if  ((s>=1000) && (t<=365) && (t>0)) {
-	printf("",Proffit(s,t));
-		
+	if  ((s>=1000) && (t<=365) && (t>0)) 
+	   {
+	printf("%f",Proffit(s,t));
 		}
 	else printf("Write true data \n");
+	system("pause");
 	return 0;
 	
 }
-int Proffit(int s,int t){
+int Proffit(int x,int z)
+{
 	int prof; 
-	if (t<=30) prof=s*0.9;
-	if ((t>30)&&(t<=120)) prof=s*1.02;
-	if ((t>120)&&(t<=240)) prof=s*1.06;
-	if ((t>240)&&(t<=365)) prof=s*1.12;
-return prof;
+	if (z<=30) prof=x*0.9;
+	if ((z>30)&&(z<=120)) prof=x*1.02;
+	if ((z>120)&&(z<=240)) prof=x*1.06;
+	if ((z>240)&&(z<=365)) prof=x*1.12;
+    return prof;
 }
