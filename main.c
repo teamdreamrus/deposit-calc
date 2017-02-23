@@ -10,8 +10,8 @@ int main()
 	scanf("%f \n",s);	
 	printf("Write time contribution days (1-365):\n ");
 	scanf("%f \n",t);
-	if  ((s>=1000) && (t<=365) &&(t>0)) {
-		Proffit(s,t);
+	if  ((s>=1000) && (t<=365) && (t>0)) {
+	printf("",Proffit(s,t));
 		
 		}
 	else printf("Write true data \n");
@@ -20,12 +20,9 @@ int main()
 }
 int Proffit(int s,int t){
 	int prof; 
-	switch(t)
-	{
-		case 0..30: prof=s*0.9;
-		case 31..120: prof=s*1.02;
-		case 121..240: prof=s*1.06;
-		case 241..365: prof=s*1.12;
-		break;
-	}
+	if (t<=30) prof=s*0.9;
+	if ((t>30)&&(t<=120)) prof=s*1.02;
+	if ((t>120)&&(t<=240)) prof=s*1.06;
+	if ((t>240)&&(t<=365)) prof=s*1.12;
+return prof;
 }
