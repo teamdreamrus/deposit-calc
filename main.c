@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int proffit(int x,int z);
+float proffit(int x,int z);
 
 int main()
 {
-    int s,t;
+    int t,s;
+
     printf("enter time to deposit: \n");
     scanf("%i",&t);
     printf("enter sum to deposit: \n");
@@ -14,13 +15,13 @@ int main()
     else
 	{
 		printf("sum at the end of: ");
-        printf("%i",proffit(s,t));
+        printf("%.0f",proffit(s,t));
     }
     return 0;
 }
 
-int proffit(int x,int z){
-	int cashback=x;
+float proffit(int x,int z){
+	float cashback=x;
 	if(x<100000)
 	{
 	    if ((z > 0) && (z <= 30)) 
