@@ -7,4 +7,4 @@ main.c~
 
 .clang-format.swo
 .clang-format.swp
-*.exe
+main
