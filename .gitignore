@@ -4,3 +4,7 @@
 .main.c.swp
 main.c~
 #main.c#
+
+.clang-format.swo
+.clang-format.swp
+*.exe
