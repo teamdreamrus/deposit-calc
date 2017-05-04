@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 float proffit(int summ, int time)
 {
     float cashback = summ;
