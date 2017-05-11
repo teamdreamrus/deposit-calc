@@ -1,6 +1,6 @@
 #include "deposit.h"
 
-float proffit(double summ, int time)
+float proffit(int summ, int time)
 {
     float cashback = summ;
     if (summ < 100000) {
