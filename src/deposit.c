@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "deposit.h"
 
-float proffit(int summ, int time)
+float proffit(double summ, int time)
 {
     float cashback = summ;
     if (summ < 100000) {
@@ -26,6 +26,7 @@ float proffit(int summ, int time)
 }
 
 int checkdata(int time, int summ){
-if ((time <= 0) || (time > 365) || (summ < 10000)) return 0;
+    if ((time <= 0) || (time > 365) || (summ < 10000))
+        return 0;
 else return 1;
 }
