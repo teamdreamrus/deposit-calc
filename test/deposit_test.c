@@ -1,4 +1,4 @@
-#include "../thirdparty/ctest.h"
+#include <ctest.h>
 #include "../src/deposit.h"
 
 CTEST(test_number_one, checkdata)

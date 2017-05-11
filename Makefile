@@ -13,7 +13,8 @@ build/main.o : src/main.c src/deposit.h
 build/deposit.o : src/deposit.c src/deposit.h
 	gcc -c src/deposit.c -o build/deposit.o $(CFLAGS)
 	
-test :
+test1 :
+	make bin/deposit-calc-test
 	bin/deposit-calc-test
 
 bin/deposit-calc-test : build/test/main.o build/test/deposit_test.o
@@ -25,7 +26,7 @@ build/test/main.o : src/deposit.h test/main.c
 	@gcc -I thirdparty -c test/main.c -o build/test/main.o $(CFLAGS)
 	@gcc -c src/deposit.c -o build/test/deposit.o $(CFLAGS) 
 
-build/test/deposit-test.o : src/deposit.h test/deposit_test.c
+build/test/deposit_test.o : src/deposit.h test/deposit_test.c
 	@echo "Making deposit_test.o"
 	@gcc -c -I thirdparty test/deposit_test.c -o build/test/deposit_test.o $(CFLAGS)
 
