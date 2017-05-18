@@ -8,3 +8,6 @@ main.c~
 .clang-format.swo
 .clang-format.swp
 main
+
+#tests
+*.d
