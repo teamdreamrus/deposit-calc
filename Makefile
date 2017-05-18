@@ -13,7 +13,6 @@ build/main.o : src/main.c src/deposit.h
 build/deposit.o : src/deposit.c src/deposit.h
 	gcc -c src/deposit.c -o build/deposit.o $(CFLAGS)
 	
-test :
 	make bin/deposit-calc-test
 	
 bin/deposit-calc-test : build/test/main.o build/test/deposit-test.o

@@ -9,5 +9,6 @@ main.c~
 .clang-format.swo
 .clang-format.swp
 main
-
+deposit-calc
+deposit-calc-test
 
