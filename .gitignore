@@ -1,6 +1,7 @@
 # ignore following files
 
 *.o
+*.d
 .main.c.swp
 main.c~
 #main.c#
@@ -9,5 +10,4 @@ main.c~
 .clang-format.swp
 main
 
-#tests
-*.d
+
