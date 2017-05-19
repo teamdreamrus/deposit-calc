@@ -1,8 +1,8 @@
 CFLAGS = -Wall -Werror -MP -MMD
-.PHONY: clean all deposit-calc
+.PHONY: clean all deposit-calc test
 
 all :
-	make bin/deposit-calc
+	make bin/deposit-calc test
 
 bin/deposit-calc : build/main.o build/deposit.o
 	gcc build/main.o build/deposit.o -o bin/deposit-calc $(CFLAGS)
@@ -13,9 +13,8 @@ build/main.o : src/main.c src/deposit.h
 build/deposit.o : src/deposit.c src/deposit.h
 	gcc -c src/deposit.c -o build/deposit.o $(CFLAGS)
 	
-test1 :
-	make bin/deposit-calc-test
-	bin/deposit-calc-test
+test :
+	bin/deposit-calc
 
 bin/deposit-calc-test : build/test/main.o build/test/deposit_test.o
 	@echo "Making binary"

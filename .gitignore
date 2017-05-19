@@ -1,6 +1,7 @@
 # ignore following files
 
 *.o
+*.d
 .main.c.swp
 main.c~
 #main.c#
