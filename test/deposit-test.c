@@ -1,7 +1,7 @@
 #include <ctest.h>
 #include "../src/deposit.h"
 
-CTEST(test_number_one, checkdata)
+CTEST(checkdata, test_number_one)
 {
     // When
     int result = checkdata (199,39999);
@@ -13,7 +13,7 @@ CTEST(test_number_one, checkdata)
 
 ////*********************************////
 
-CTEST(test_day1_9999sum, checkdata)
+CTEST(checkdata,test_day1_9999sum)
 {
     
     // When
@@ -24,7 +24,7 @@ CTEST(test_day1_9999sum, checkdata)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_negday_sum10001, checkdata)
+CTEST(checkdata,test_negday_sum10001)
 {
 	// When
     int result = checkdata (-1,10001);
@@ -34,7 +34,7 @@ CTEST(test_negday_sum10001, checkdata)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_days366_sum10001, checkdata)
+CTEST(checkdata,test_days366_sum10001)
 {
 	// When
     int result = checkdata (366,10001);
@@ -44,7 +44,7 @@ CTEST(test_days366_sum10001, checkdata)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_day1_sum10000, proffit)
+CTEST(proffit,test_day1_sum10000)
 {	
 	// When
     int result = proffit (10000,1);
@@ -54,7 +54,7 @@ CTEST(test_day1_sum10000, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_sum10000days30, proffit)
+CTEST(proffit,test_sum10000days30)
 {
 	// When
     int result = proffit (10000,30);
@@ -64,7 +64,7 @@ CTEST(test_sum10000days30, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_30days_sum100000, proffit)
+CTEST(proffit, test_30days_sum100000)
 {
 	// When
     int result = proffit (100000,30);
@@ -74,7 +74,7 @@ CTEST(test_30days_sum100000, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_31days_sum10000, proffit)
+CTEST(proffit, test_31days_sum10000)
 {
 	// When
     int result = proffit (10000,31);
@@ -84,7 +84,7 @@ CTEST(test_31days_sum10000, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_241days_sum10000, proffit)
+CTEST(proffit, test_241days_sum10000)
 {
 	// When
     int result = proffit (10000,241);
@@ -94,7 +94,7 @@ CTEST(test_241days_sum10000, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_241days_sum100000, proffit)
+CTEST(proffit, test_241days_sum100000)
 {
 	// When
     int result = proffit (100000,241);
@@ -104,7 +104,7 @@ CTEST(test_241days_sum100000, proffit)
     ASSERT_EQUAL(expected, result);
 }
 ////*********************************////
-CTEST(test_241days_sum110000, proffit)
+CTEST(proffit, test_241days_sum110000)
 {
 	// When
     int result = proffit (110000,365);
