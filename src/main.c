@@ -9,8 +9,9 @@ int main()
     scanf("%i", &time);
     printf("enter sum to deposit: \n");
     scanf("%i", &summ);
-    if (checkdata(time, summ)==0)
+    if (checkdata(time, summ)==0){
         printf("enter correct data! \n");
+	return 0;}
     else {
         printf("sum at the end of: ");
         printf("%.0f \n", proffit(summ, time));
