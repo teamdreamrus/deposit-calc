@@ -1,3 +1,5 @@
-variant 2
-I deleted all the code and created the program again, because it could not find a simple bug while using "scanf" pointed "&" without.
-I am a bad programmer.
+# deposit-calc
+
+[![Build Status](https://travis-ci.org/teamdreamrus/deposit-calc.svg?branch=master)](https://travis-ci.org/teamdreamrus/deposit-calc)
+
+V-2
