@@ -4,7 +4,7 @@
 CTEST(checkdata, test_number_one)
 {
     // When
-    int result = checkdata (199,39999);
+    int result = checkdata (-1,39999);
 
     // Then
     int expected = 1;
