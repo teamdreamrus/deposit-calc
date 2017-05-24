@@ -27,6 +27,6 @@ float proffit(int summ, int time)
 
 int checkdata(int time, int summ){
     if ((time <= 0) || (time > 365) || (summ < 10000))
-        return 0;
-else return 1;
+        return 1;
+else return 0;
 }

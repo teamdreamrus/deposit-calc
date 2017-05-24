@@ -1,10 +1,10 @@
 #include <ctest.h>
 #include "../src/deposit.h"
 
-CTEST(checkdata, test_number_one)
+CTEST(checkdata, test_day100_39999sum)
 {
     // When
-    int result = checkdata (-10,39999);
+    int result = checkdata (100,39999);
 
     // Then
     int expected = 1;
